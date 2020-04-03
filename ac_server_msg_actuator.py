@@ -4,6 +4,8 @@ Created on Thu Apr  2 19:11:17 2020
 
 @author: Cristian
 """
+import argparse
+import time
 
 def read_text_file(file_name):
     f = open(file_name, "r")
@@ -34,13 +36,20 @@ def assemble_html(part1, part2, between12):
 def main():
     [part1, part2] = map(read_text_file, ["server_template1.html", "server_template2.html"])
     
+    parser = argparse.ArgumentParser(description='American conquest server message actuator')
+    parser.add_argument('fifo_file', help = "input data file to read from")
+    parser.add_argument('resulting_file', help = "output html file with data inserted")
+    args = parser.parse_args()
+
     while True:
-        between = read_text_file("server_output2.txt")
-        write_text_to_file("","server_output2.txt") #delete contents after read
-        append_text_to_file(between+"\n","output_archive.txt")
-        result = assemble_html(part1, part2, between)
-        write_text_to_file(result, "result.html")
-    
+        between = read_text_file(args.fifo_file)
+        
+        if between.strip()!="":
+            write_text_to_file("", args.fifo_file) #delete contents after read
+            append_text_to_file(between+"\n","output_archive.txt")
+            result = assemble_html(part1, part2, between)
+            write_text_to_file(result, args.resulting_file)
+        time.sleep(0.5)
      
 # calling
 main()
