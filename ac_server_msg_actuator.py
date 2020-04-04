@@ -8,6 +8,9 @@ import argparse
 import time
 import datetime
 import re
+import json
+from datetime import datetime
+import os.path
 
 class Html:
     br = "<br>"
@@ -15,12 +18,19 @@ class Html:
         return "<div>" + content + "</div>"
 
 class Player:
-    def __init__(self, nick):
+    dt_format = '%d-%m-%y %H:%M:%S'
+
+    def __init__(self, nick, datetime_str=''):
         self.nick = nick
-        self.date_last_activity = datetime.datetime.now()
+        self.date_last_activity= datetime.now()
+
+        if datetime_str!='':
+            self.date_last_activity = datetime.strptime(datetime_str, Player.dt_format)
+            
+
 
     def inactivity_duration(self):
-        return datetime.datetime.now() - self.date_last_activity
+        return datetime.now() - self.date_last_activity
 
     def display_duration(self, duration):
         days = duration.days
@@ -43,12 +53,17 @@ class Player:
     def __str__(self):
         return self.to_html_string()
 
+    def representation(self):
+        return self.nick + " " + self.date_last_activity.strftime(self.dt_format)
+
 
 
 # ----------------------------------- File I/O --------------------------------------
 def read_text_file(file_name):
     f = open(file_name, "r")
-    return f.read()
+    s = f.read()
+    f.close()
+    return s
 
 def write_text_to_file(text, file_name):
     f= open(file_name,"w")
@@ -63,6 +78,31 @@ def append_text_to_file(text, file_name):
 def get_lines(text):
     return text.split('\n')
 
+def get_words(text):
+    return text.split(' ')
+
+
+# ////////////////////////////////////////    write ///////////////////////////////////////////////////////////////
+#
+def write_players(file_name, players):
+    dfile = open(file_name, "w")
+    map(dfile.write, map(lambda x: x.representation()+"\n" ,players.values()))
+    dfile.close()
+    return
+
+# ////////////////////////////////////////    read ///////////////////////////////////////////////////////////////
+#
+def read_players(file_name):
+    s=''
+    if os.path.isfile(file_name):
+        f = open(file_name, "r")
+        s = f.read()
+        f.close()
+    lines = filter(lambda x:x!='', map(lambda x:x.strip(), get_lines(s)))
+    print(lines)
+    if lines[0].strip()=="":
+        return dict()
+    return dict(map(lambda line: (line[0], Player(line[0], line[1]+" "+line[2])), map(get_words ,lines)))
 
 
 
@@ -85,8 +125,13 @@ def assemble_html(part1, part2, part3, data, players):
 
 
 def main():
+    # constants
+    output_archive_file = "output_archive.txt"
+    players_file = "players_data"
+
     [part1, part2, part3] = map(read_text_file, ["server_template1.html", "server_template2.html","server_template3.html"])
     
+    #arg parsing
     parser = argparse.ArgumentParser(description='American conquest server message actuator')
     parser.add_argument('fifo_file', help = "input data file to read from")
     parser.add_argument('resulting_file', help = "output html file with data inserted")
@@ -94,26 +139,30 @@ def main():
 
     #for info integrity, save and clean fifo
     data = read_text_file(args.fifo_file)
-    append_text_to_file(data+"\n","output_archive.txt")
+    append_text_to_file(data+"\n", output_archive_file)
     write_text_to_file("", args.fifo_file)
     
-
-    players = {}
+    # load players
+    players = read_players(players_file)
+    #print(players) #debug
     while True:
         data = read_text_file(args.fifo_file)
         players.update(players)
 
         if data.strip()!="":
             write_text_to_file("", args.fifo_file) #delete contents after read
-            append_text_to_file(data+"\n","output_archive.txt")
+            append_text_to_file(data+"\n",output_archive_file)
             players.update(collect_players(data))
 
         result = assemble_html(part1, part2, part3, data, players)
         write_text_to_file(result, args.resulting_file)
 
+        # save players
+        write_players(players_file, players)
         time.sleep(5)
 
 
 
-# calling
+# -------------------------------------- calling -------------------------------------------------------------------------------
 main()
+
