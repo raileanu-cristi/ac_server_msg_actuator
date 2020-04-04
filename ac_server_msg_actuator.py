@@ -16,8 +16,8 @@ class Html:
     br = "<br>"
     def div(self, content):
         return "<div>" + content + "</div>"
-    def h1(self, content):
-        return "<h1>" + content + "</h1>"
+    def h3(self, content):
+        return "<h3>" + content + "</h3>"
 
 class Player:
     dt_format = '%d-%m-%y %H:%M:%S'
@@ -50,7 +50,7 @@ class Player:
         return str(seconds) + " seconds"
 
     def to_html_string(self):
-        return Html().div(Html().h1(self.nick) + Html().br + self.display_duration(self.inactivity_duration())+" ago" )
+        return Html().div(Html().h3(self.nick) + Html().br + self.display_duration(self.inactivity_duration())+" ago" )
 
     def __str__(self):
         return self.to_html_string()
