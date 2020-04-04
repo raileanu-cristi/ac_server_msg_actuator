@@ -67,6 +67,26 @@ class Player:
         return self.nick + " " + self.date_last_activity.strftime(self.dt_format)
 # --------------- end Player ------------------------------------------------------------------------------
 
+# ------------------------------------- Lobby ------------------------------------------------
+class Lobby:
+    def __init__(self, name):
+        self.name = name
+        self.date_last_activity= datetime.now()
+
+    def to_html_string(self):
+        tags = Html()
+        outer_style = "font-size: 20px;margin-bottom: 4px;border: 1px"
+        return tags.div(self.name, outer_style)
+    
+    def __str__(self):
+        return self.to_html_string()
+
+    def inactivity_duration(self):
+        return datetime.now() - self.date_last_activity
+
+    def expired(self):
+        return self.inactivity_duration().seconds > 300 # 5 minutes
+# --------------- end Lobby ------------------------------------------------------------------------------
 
 # ----------------------------------- File I/O --------------------------------------
 def read_text_file(file_name):
@@ -127,9 +147,14 @@ def collect_players(data):
     return dict(map(lambda x: (x, Player(x)), names) )
 
 
-def assemble_html(part1, part2, part3, data, players):
+def collect_lobbies(data):
+    names = re.findall("VE_TITLE=([^\^]*)", data)
+    return dict(map(lambda x: (x, Lobby(x)), names))
+
+
+def assemble_html(part1, part2, part3, data, players, lobbies):
     lines = get_lines(data)
-    return part1+reduce((lambda x,y: x+"\n"+y), map(display_line, lines), "")+part2 + reduce((lambda x,y: x+"\n"+y), map(str, players.values()), "") + part3
+    return part1+reduce((lambda x,y: x+"\n"+y), map(str, lobbies.values()), "")+part2 + reduce((lambda x,y: x+"\n"+y), map(str, players.values()), "") + part3
 
 
 
@@ -155,17 +180,21 @@ def main():
     
     # load players
     players = read_players(players_file)
+    lobbies = {}
     #print(players) #debug
     while True:
         data = read_text_file(args.fifo_file)
-        players.update(players)
+        # players.update(players) #removed
 
         if data.strip()!="":
             write_text_to_file("", args.fifo_file) #delete contents after read
             append_text_to_file(data+"\n",output_archive_file)
             players.update(collect_players(data))
+            lobbies.update(collect_lobbies(data))
+        
+        lobbies = dict(filter(lambda x: not x[1].expired(), lobbies.items()))
 
-        result = assemble_html(part1, part2, part3, data, players)
+        result = assemble_html(part1, part2, part3, data, players, lobbies)
         write_text_to_file(result, args.resulting_file)
 
         # save players
