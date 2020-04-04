@@ -14,11 +14,16 @@ import os.path
 
 class Html:
     br = "<br>"
-    def div(self, content):
+    def div(self, content, style=''):
+        if style!='':
+            return "<div style=\"" + style + "\">" + content + "</div>"
         return "<div>" + content + "</div>"
     def h3(self, content):
         return "<h3>" + content + "</h3>"
+    def b(self, content):
+        return "<b>" + content + "</b>"
 
+# ------------------------------------- Player ------------------------------------------------
 class Player:
     dt_format = '%d-%m-%y %H:%M:%S'
 
@@ -51,14 +56,16 @@ class Player:
 
     def to_html_string(self):
         tags = Html()
-        return tags.div(tags.div(self.nick) + tags.div(self.display_duration(self.inactivity_duration())+" ago"))
+        outer_style = "margin-bottom: 4px;border: 1px"
+        name_style = "font-size: 20px;"
+        return tags.div(tags.div(tags.b(self.nick) , name_style) + tags.div(self.display_duration(self.inactivity_duration())+" ago"), outer_style)
 
     def __str__(self):
         return self.to_html_string()
 
     def representation(self):
         return self.nick + " " + self.date_last_activity.strftime(self.dt_format)
-
+# --------------- end Player ------------------------------------------------------------------------------
 
 
 # ----------------------------------- File I/O --------------------------------------
