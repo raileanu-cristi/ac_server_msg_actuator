@@ -99,8 +99,8 @@ def read_players(file_name):
         s = f.read()
         f.close()
     lines = filter(lambda x:x!='', map(lambda x:x.strip(), get_lines(s)))
-    print(lines)
-    if lines[0].strip()=="":
+    #print(lines)
+    if lines==[]:
         return dict()
     return dict(map(lambda line: (line[0], Player(line[0], line[1]+" "+line[2])), map(get_words ,lines)))
 
