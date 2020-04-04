@@ -50,7 +50,8 @@ class Player:
         return str(seconds) + " seconds"
 
     def to_html_string(self):
-        return Html().div(Html().h3(self.nick) + Html().br + self.display_duration(self.inactivity_duration())+" ago" )
+        tags = Html()
+        return tags.div(tags.div(self.nick) + tags.div(self.display_duration(self.inactivity_duration())+" ago"))
 
     def __str__(self):
         return self.to_html_string()
@@ -115,6 +116,7 @@ def display_line(line):
 
 def collect_players(data):
     names = re.findall("NICK=([^\"]*)", data)
+    names += re.findall("[.][\d]+[.][\d]+\s([a-zA-Z][^:]+)", data)
     return dict(map(lambda x: (x, Player(x)), names) )
 
 
