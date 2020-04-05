@@ -165,13 +165,13 @@ def main():
     # constants
     output_archive_file = "output_archive.txt"
     players_file = "players_data"
-
+    server_html_file = "server.html"
     # [part1, part2, part3] = map(read_text_file, ["server_template1.html", "server_template2.html","server_template3.html"])
     
     #arg parsing
     parser = argparse.ArgumentParser(description='American conquest server message actuator')
     parser.add_argument('fifo_file', help = "input data file to read from")
-    #parser.add_argument('resulting_file', help = "output html file with data inserted")
+    parser.add_argument('resulting_main_file', help = "output html file")
     parser.add_argument('players_html_file', help = "output html file for player data")
     parser.add_argument('lobbies_html_file', help = "output html file for lobby data")
     args = parser.parse_args()
@@ -181,6 +181,8 @@ def main():
     append_text_to_file(data+"\n", output_archive_file)
     write_text_to_file("", args.fifo_file)
     
+    write_text_to_file(read_text_file(server_html_file), args.resulting_main_file)
+
     # load players
     players = read_players(players_file)
     lobbies = {}
