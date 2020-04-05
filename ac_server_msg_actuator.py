@@ -7,9 +7,8 @@ Created on Thu Apr  2 19:11:17 2020
 import argparse
 import time
 import datetime
-import re
-import json
 from datetime import datetime
+import re
 import os.path
 
 class Html:
@@ -152,10 +151,12 @@ def collect_lobbies(data):
     return dict(map(lambda x: (x, Lobby(x)), names))
 
 
-def assemble_html(part1, part2, part3, data, players, lobbies):
-    lines = get_lines(data)
-    return part1+reduce((lambda x,y: x+"\n"+y), map(str, lobbies.values()), "")+part2 + reduce((lambda x,y: x+"\n"+y), map(str, players.values()), "") + part3
+# def assemble_html(part1, part2, part3, data, players, lobbies): #old function
+#     lines = get_lines(data)
+#     return part1+reduce((lambda x,y: x+"\n"+y), map(str, lobbies.values()), "")+part2 + reduce((lambda x,y: x+"\n"+y), map(str, players.values()), "") + part3
 
+def assemble_html(data_dict):
+    return reduce((lambda x,y: x+"\n"+y), map(str, data_dict.values()), "")
 
 
 
@@ -165,12 +166,14 @@ def main():
     output_archive_file = "output_archive.txt"
     players_file = "players_data"
 
-    [part1, part2, part3] = map(read_text_file, ["server_template1.html", "server_template2.html","server_template3.html"])
+    # [part1, part2, part3] = map(read_text_file, ["server_template1.html", "server_template2.html","server_template3.html"])
     
     #arg parsing
     parser = argparse.ArgumentParser(description='American conquest server message actuator')
     parser.add_argument('fifo_file', help = "input data file to read from")
-    parser.add_argument('resulting_file', help = "output html file with data inserted")
+    #parser.add_argument('resulting_file', help = "output html file with data inserted")
+    parser.add_argument('players_html_file', help = "output html file for player data")
+    parser.add_argument('lobbies_html_file', help = "output html file for lobby data")
     args = parser.parse_args()
 
     #for info integrity, save and clean fifo
@@ -194,8 +197,10 @@ def main():
         
         lobbies = dict(filter(lambda x: not x[1].expired(), lobbies.items()))
 
-        result = assemble_html(part1, part2, part3, data, players, lobbies)
-        write_text_to_file(result, args.resulting_file)
+        # result = assemble_html(part1, part2, part3, data, players, lobbies)
+        # write_text_to_file(result, args.resulting_file)
+        write_text_to_file(assemble_html(players), args.players_html_file )
+        write_text_to_file(assemble_html(lobbies), args.lobbies_html_file )
 
         # save players
         write_players(players_file, players)
