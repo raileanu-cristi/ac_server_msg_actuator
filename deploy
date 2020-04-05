@@ -1,1 +1,1 @@
-python ac_server_msg_actuator.py ./../ac/server_output.txt /usr/local/nginx/html/zfmz/players.html /usr/local/nginx/html/zfmz/lobbies.html
+python ac_server_msg_actuator.py ./../ac/server_output.txt /usr/local/nginx/html/zfmz/server.html /usr/local/nginx/html/zfmz/players.html /usr/local/nginx/html/zfmz/lobbies.html
