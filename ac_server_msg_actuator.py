@@ -151,13 +151,11 @@ def collect_lobbies(data):
     return dict(map(lambda x: (x, Lobby(x)), names))
 
 
-# def assemble_html(part1, part2, part3, data, players, lobbies): #old function
-#     lines = get_lines(data)
-#     return part1+reduce((lambda x,y: x+"\n"+y), map(str, lobbies.values()), "")+part2 + reduce((lambda x,y: x+"\n"+y), map(str, players.values()), "") + part3
+def assemble_html_players(data_dict):
+    return reduce((lambda x,y: x+"\n"+y), map(str, sorted(data_dict.values(), reverse=True, key=lambda x:x.date_last_activity) ), "")
 
-def assemble_html(data_dict):
-    return reduce((lambda x,y: x+"\n"+y), map(str, data_dict.values()), "")
-
+def assemble_html_lobbies(data_dict):
+    return reduce((lambda x,y: x+"\n"+y), map(str, data_dict.values() ), "")
 
 
 
@@ -189,7 +187,6 @@ def main():
     #print(players) #debug
     while True:
         data = read_text_file(args.fifo_file)
-        # players.update(players) #removed
 
         if data.strip()!="":
             write_text_to_file("", args.fifo_file) #delete contents after read
@@ -201,8 +198,8 @@ def main():
 
         # result = assemble_html(part1, part2, part3, data, players, lobbies)
         # write_text_to_file(result, args.resulting_file)
-        write_text_to_file(assemble_html(players), args.players_html_file )
-        write_text_to_file(assemble_html(lobbies), args.lobbies_html_file )
+        write_text_to_file(assemble_html_players(players), args.players_html_file )
+        write_text_to_file(assemble_html_lobbies(lobbies), args.lobbies_html_file )
 
         # save players
         write_players(players_file, players)

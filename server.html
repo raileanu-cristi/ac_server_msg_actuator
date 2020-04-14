@@ -53,7 +53,7 @@ input, button{border:0;vertical-align:middle;margin:2px;line-height:18px;font-si
         
     </head>
 
-<body onload = "JavaScript:AutoRefresh(5000);">
+<body onload = "JavaScript:AutoRefresh(10000);">
     
     
     
@@ -194,11 +194,11 @@ input, button{border:0;vertical-align:middle;margin:2px;line-height:18px;font-si
 	
 	
 <div style="padding-top:5px;"><!-- 文字起始 -->
-<div  style="text-align:left;width:746px;float:left;padding-right:12x;"><!-- 文字 left -->
+<div  style="text-align:left;width:700px;float:left;padding-right:12x;"><!-- 文字 left -->
 
 
 <div align="left"><strong>Opened Lobbies (last 5 min) — 服务器聊天信息</strong></div>
-<div id="lobbies" align="left" class="note" style="padding-left:0px;width:746px;height:400px;background-image:url(images/content/center1.jpg);!important" >
+<div id="lobbies" align="left" class="note" style="padding-left:0px;width:700px;height:400px;background-image:url(images/content/center1.jpg);!important" >
 
 </div>
 </div><!-- 文字 left end -->
@@ -208,11 +208,11 @@ input, button{border:0;vertical-align:middle;margin:2px;line-height:18px;font-si
 
 
 
-<div  style="text-align:left;width:200px;float:right;"><!-- 文字 right -->
+<div  style="text-align:left;width:240px;float:right;"><!-- 文字 right -->
 
 
 <div align="left"><strong>Online players — 在线玩家</strong></div>
-<div id="players" align="left" class="note" style="padding-left:0px;width:200px;height:400px;background-image:url(images/content/center1.jpg);!important">
+<div id="players" align="left" class="note" style="padding-left:0px;width:240px;height:400px;background-image:url(images/content/center1.jpg);!important">
 
     
  
@@ -281,10 +281,11 @@ function copyUrl(){
         function AutoRefresh( t ) {
             // setTimeout("location.reload(true);", t);
             load_data();
+            
             setInterval("load_data();", t);
         }
         function load_data() {
-            document.getElementById("players").innerHTML='<object style="height: 400px" type="text/html" data="players.html" ></object>';
+            document.getElementById("players").innerHTML='<object style="height: 380px; width: 230px" type="text/html" data="players.html" ></object>';
             document.getElementById("lobbies").innerHTML='<object style="height: 400px" type="text/html" data="lobbies.html" ></object>';
         } 
     //-->
