@@ -33,7 +33,11 @@ class Player:
         if datetime_str!='':
             self.date_last_activity = datetime.strptime(datetime_str, Player.dt_format)
             
-
+    def has_valid_nick(self):
+        if (re.search("^[a-zA-Z]", self.nick)):
+            return True
+        else:
+            return False
 
     def inactivity_duration(self):
         return datetime.now() - self.date_last_activity
@@ -141,8 +145,8 @@ def display_line(line):
 
 
 def collect_players(data):
-    names = re.findall("NICK=([^\"]*)", data)
-    names += re.findall("[.][\d]+[.][\d]+\s([a-zA-Z][^:]+)", data)
+    # names = re.findall("NICK=([^\"]*)", data)
+    names = re.findall("[.][\d]+[.][\d]+\s([a-zA-Z][^:]+)", data)
     return dict(map(lambda x: (x, Player(x)), names) )
 
 
@@ -157,14 +161,14 @@ def assemble_html_players(data_dict):
 def assemble_html_lobbies(data_dict):
     return reduce((lambda x,y: x+"\n"+y), map(str, data_dict.values() ), "")
 
-
+def filter_players(players):
+    return dict(filter(lambda x: x[1].has_valid_nick(), players.items()))
 
 def main():
     # constants
     output_archive_file = "output_archive.txt"
     players_file = "players_data"
     server_html_file = "server.html"
-    # [part1, part2, part3] = map(read_text_file, ["server_template1.html", "server_template2.html","server_template3.html"])
     
     #arg parsing
     parser = argparse.ArgumentParser(description='American conquest server message actuator')
@@ -182,9 +186,8 @@ def main():
     write_text_to_file(read_text_file(server_html_file), args.resulting_main_file)
 
     # load players
-    players = read_players(players_file)
+    players = filter_players(read_players(players_file))
     lobbies = {}
-    #print(players) #debug
     while True:
         data = read_text_file(args.fifo_file)
 
@@ -196,8 +199,6 @@ def main():
         
         lobbies = dict(filter(lambda x: not x[1].expired(), lobbies.items()))
 
-        # result = assemble_html(part1, part2, part3, data, players, lobbies)
-        # write_text_to_file(result, args.resulting_file)
         write_text_to_file(assemble_html_players(players), args.players_html_file )
         write_text_to_file(assemble_html_lobbies(lobbies), args.lobbies_html_file )
 
