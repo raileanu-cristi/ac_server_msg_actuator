@@ -10,109 +10,9 @@ import datetime
 from datetime import datetime
 import re
 import os.path
-
-class Html:
-    br = "<br>"
-    def div(self, content, style=''):
-        if style!='':
-            return "<div style=\"" + style + "\">" + content + "</div>"
-        return "<div>" + content + "</div>"
-    def h3(self, content):
-        return "<h3>" + content + "</h3>"
-    def b(self, content):
-        return "<b>" + content + "</b>"
-
-# ------------------------------------- Player ------------------------------------------------
-class Player:
-    dt_format = '%d-%m-%y %H:%M:%S'
-
-    def __init__(self, nick, datetime_str=''):
-        self.nick = nick
-        self.date_last_activity= datetime.now()
-
-        if datetime_str!='':
-            self.date_last_activity = datetime.strptime(datetime_str, Player.dt_format)
-            
-    def has_valid_nick(self):
-        if (re.search("^[a-zA-Z]", self.nick)):
-            return True
-        else:
-            return False
-
-    def inactivity_duration(self):
-        return datetime.now() - self.date_last_activity
-
-    def display_duration(self, duration):
-        days = duration.days
-        seconds = duration.seconds
-        hours = duration.seconds / 3600
-        minutes = (duration.seconds % 3600) / 60
-        seconds = duration.seconds
-        if days > 0:
-            return str(days)+" days"
-        if hours > 0:
-            return str(hours) + " hours"
-        if minutes > 0:
-            return str(minutes) + " minutes"
-        
-        return str(seconds) + " seconds"
-
-    def to_html_string(self):
-        tags = Html()
-        outer_style = "margin-bottom: 4px;border: 1px"
-        name_style = "font-size: 20px;"
-        return tags.div(tags.div(tags.b(self.nick) , name_style) + tags.div(self.display_duration(self.inactivity_duration())+" ago"), outer_style)
-
-    def __str__(self):
-        return self.to_html_string()
-
-    def representation(self):
-        return self.nick + " " + self.date_last_activity.strftime(self.dt_format)
-# --------------- end Player ------------------------------------------------------------------------------
-
-# ------------------------------------- Lobby ------------------------------------------------
-class Lobby:
-    def __init__(self, name):
-        self.name = name
-        self.date_last_activity= datetime.now()
-
-    def to_html_string(self):
-        tags = Html()
-        outer_style = "font-size: 20px;margin-bottom: 4px;border: 1px"
-        return tags.div(self.name, outer_style)
-    
-    def __str__(self):
-        return self.to_html_string()
-
-    def inactivity_duration(self):
-        return datetime.now() - self.date_last_activity
-
-    def expired(self):
-        return self.inactivity_duration().seconds > 300 # 5 minutes
-# --------------- end Lobby ------------------------------------------------------------------------------
-
-# ----------------------------------- File I/O --------------------------------------
-def read_text_file(file_name):
-    f = open(file_name, "r")
-    s = f.read()
-    f.close()
-    return s
-
-def write_text_to_file(text, file_name):
-    f= open(file_name,"w")
-    f.write(text)
-    f.close()
-
-def append_text_to_file(text, file_name):
-    f= open(file_name,"a")
-    f.write(text)
-    f.close()
-
-def get_lines(text):
-    return text.split('\n')
-
-def get_words(text):
-    return text.split(' ')
+from lobby import Lobby
+from player import Player
+from io_simple import read_text_file, write_text_to_file, append_text_to_file, get_lines, get_words
 
 
 # ////////////////////////////////////////    write ///////////////////////////////////////////////////////////////
@@ -132,16 +32,15 @@ def read_players(file_name):
         s = f.read()
         f.close()
     lines = filter(lambda x:x!='', map(lambda x:x.strip(), get_lines(s)))
-    #print(lines)
+    print("lines= "+lines[0])
     if lines==[]:
         return dict()
-    return dict(map(lambda line: (line[0], Player(line[0], line[1]+" "+line[2])), map(get_words ,lines)))
+    return dict(map(lambda line: (line[0], Player(line[0], line[1]+" "+line[2], line[3])), map(get_words ,lines)))
 
 
 
 # ----------------------------------- processing data --------------------------------------
-def display_line(line):
-    return Html().div(line)
+
 
 
 def collect_players(data):
@@ -164,6 +63,15 @@ def assemble_html_lobbies(data_dict):
 def filter_players(players):
     return dict(filter(lambda x: x[1].has_valid_nick(), players.items()))
 
+# in/out players
+def update_players(players, new_players):
+    new_guys = { k : new_players[k] for k in set(new_players) - set(players) } # were not present in players
+    old_guys = { k : players[k] for k in set(new_players) - set(new_guys) }
+    players.update(dict(map(lambda x: (x[0], x[1].update()), old_guys.items())))
+    players.update(new_guys)
+    
+
+# ----------------------------------- app logic --------------------------------------
 def main():
     # constants
     output_archive_file = "output_archive.txt"
@@ -194,7 +102,7 @@ def main():
         if data.strip()!="":
             write_text_to_file("", args.fifo_file) #delete contents after read
             append_text_to_file(data+"\n",output_archive_file)
-            players.update(collect_players(data))
+            update_players(players, collect_players(data))
             lobbies.update(collect_lobbies(data))
         
         lobbies = dict(filter(lambda x: not x[1].expired(), lobbies.items()))
