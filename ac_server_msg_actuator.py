@@ -65,8 +65,8 @@ def filter_players(players):
 
 # in/out players
 def update_players(players, new_players):
-    new_guys = { k : new_players[k] for k in set(new_players) - set(players) } # were not present in players
-    old_guys = { k : players[k] for k in set(new_players) - set(new_guys) }
+    new_guys = dict([ (k, new_players[k]) for k in set(new_players) - set(players) ]) # were not present in players
+    old_guys = dict([(k, players[k]) for k in set(new_players) - set(new_guys)])
     players.update(dict(map(lambda x: (x[0], x[1].update()), old_guys.items())))
     players.update(new_guys)
     
