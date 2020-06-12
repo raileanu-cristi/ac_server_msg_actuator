@@ -1,7 +1,7 @@
 from html_simple import  Html
 import re
 from datetime import datetime
-from io_simple import display_duration, display_minutes_hours
+from io_simple import display_duration
 
 class Player:
     dt_format = '%d-%m-%y %H:%M:%S'
@@ -40,7 +40,8 @@ class Player:
 
 
 
-
+    def get_xp(self):
+        return int(self.duration_of_play / 60)
 
 
 
@@ -48,8 +49,8 @@ class Player:
         tags = Html()
         outer_style = "margin-bottom: 4px;border: 1px"
         name_style = "font-size: 20px;"
-        return tags.div(tags.div(tags.b(self.nick) , name_style) + tags.div(display_duration(self.inactivity_duration())+" ago")+ 
-                tags.div("total activity: " + display_minutes_hours(self.duration_of_play) ), outer_style)
+        return tags.div(tags.div(tags.b(self.nick) , name_style) + tags.div("" + str(self.get_xp()) + "XP" ) + 
+               tags.div(display_duration(self.inactivity_duration())+" ago") , outer_style)
 
 
 
