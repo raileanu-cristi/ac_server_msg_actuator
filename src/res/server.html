@@ -154,73 +154,64 @@ input, button{border:0;vertical-align:middle;margin:2px;line-height:18px;font-si
                     <div class="centerRight">
                         <div class="center">
                             <div class="Content">
-   <!-- !!! 所有的内容部分请写到这个 div 中  开始  -->
-                              
-                              
-                              
-                              
+   <!-- !!!  div 中  开始  -->
 
 
 <div style="padding-top:5px;"><!-- 文字起始 -->
-<div  style="text-align:left;width:473px;float:left;padding-right:12x;"><!-- 文字 left -->
-<p align="center"><strong><font size="4">About</font></strong></p>
-<br>
-<p> American Conquest is a massive real-time strategy game developed in 2003 by GSC Corporation. It can can be found on Steam and GoG.</p>
-<p> This web page is a meta-server of American Conquest. You can see below the opened lobbies and last online players on the server. </p>
-</div><!-- 文字 left end -->
+    <div  style="text-align:left;width:473px;float:left;padding-right:12x;"><!-- 文字 left -->
+    <p align="center"><strong><font size="4">About</font></strong></p>
+    <br>
+    <p> American Conquest is a massive real-time strategy game developed in 2003 by GSC Corporation. It can can be found on Steam and GoG.</p>
+    <p> This web page is a meta-server of American Conquest. You can see below the opened lobbies and last online players on the server. </p>
+    </div><!--  left end -->
 
+    <div  style="text-align:left;width:473px;float:right;"><!-- 文字 right -->
+    <p align="center"><strong><font size="4">Game Server</font></strong></p>
+    <br>
 
+    <p>The original internet game server is not working anymore. A new third-party online server is provided</p>
+    <p>For connecting to it, open the game folder, modify \Intenet\ggwdc.ini file in the following way:  </p>
+    <p>ggwdserver_addr 67.218.129.107  </p>
+    <p>ggwdserver_port 34001</p>
+    <p>ggwdserver_lang 0</p>
+    <p>ggwdserver_vers 2</p>
 
+    </div><!-- 文字 right end -->
+    <div style="clear:both;"></div>
 
-
-
-<div  style="text-align:left;width:473px;float:right;"><!-- 文字 right -->
- <p align="center"><strong><font size="4">Game Server</font></strong></p>
-<br>
-
-<p>The original internet game server is not working anymore. A new third-party online server is provided</p>
-<p>For connecting to it, open the game folder, modify \Intenet\ggwdc.ini file in the following way:  </p>
-<p>ggwdserver_addr 67.218.129.107  </p>
-<p>ggwdserver_port 34001</p>
-<p>ggwdserver_lang 0</p>
-<p>ggwdserver_vers 2</p>
-
-</div><!-- 文字 right end -->
-<div style="clear:both;"></div></div>
+</div>
  
 	<br>
 
 	
 	
 	
-<div style="padding-top:5px;"><!-- 文字起始 -->
-<div  style="text-align:left;width:700px;float:left;padding-right:12x;"><!-- 文字 left -->
+<div style="padding-top:5px;">
+
+    <div  style="text-align:left;width:460px;float:left;"><!--  left -->
+        <div align="left"><strong>Opened Lobbies (last 5 min)</strong></div>
+        <div id="lobbies" align="left" class="note" style="padding-left:0px;height:400px;background-image:url(images/content/center1.jpg);!important" >
+        </div>
+    </div><!--  left end -->
+
+    <div  style="text-align:left;width:240px;float:left;"><!--  right -->
+        <div align="left"><strong>Top active players</strong></div>
+        <div id="top_players" align="left" class="note" style="padding-left:0px;height:400px;background-image:url(images/content/center1.jpg);!important">
+        </div>
+    </div><!--  center end -->
+
+    <div  style="text-align:left;width:240px;float:left;"><!--  right -->
+        <div align="left"><strong>Online players</strong></div>
+        <div id="players" align="left" class="note" style="padding-left:0px;height:400px;background-image:url(images/content/center1.jpg);!important">
+        </div>
+    </div><!--  right end -->
+
+    <div style="clear:both;"></div>
+
+</div>	
 
 
-<div align="left"><strong>Opened Lobbies (last 5 min)</strong></div>
-<div id="lobbies" align="left" class="note" style="padding-left:0px;width:700px;height:400px;background-image:url(images/content/center1.jpg);!important" >
-
-</div>
-</div><!-- 文字 left end -->
-
-
-
-
-
-
-<div  style="text-align:left;width:240px;float:right;"><!-- 文字 right -->
-
-
-<div align="left"><strong>Online players</strong></div>
-<div id="players" align="left" class="note" style="padding-left:0px;width:240px;height:400px;background-image:url(images/content/center1.jpg);!important">
-
-    
- 
-</div>
-</div><!-- 文字 right end -->
-<div style="clear:both;"></div></div>	
-
-	<br>	
+<br>	
         
 <!-- 广告开始 MOD 广告 -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -232,15 +223,15 @@ input, button{border:0;vertical-align:middle;margin:2px;line-height:18px;font-si
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<!-- 广告结束 MOD 广告 -->
+
                               
                               
-  <!-- !!! 所有的内容部分请写到这个 div 中  结束 -->
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 底部花纹 -->
+               
                 <div class="bottomLeft">
                     <div class="bottomRight">
                         <div class="bottomCenter"></div>
@@ -257,11 +248,11 @@ input, button{border:0;vertical-align:middle;margin:2px;line-height:18px;font-si
         </div>
 
 		
-		<script type="text/javascript">
+<script type="text/javascript">
 function copyUrl(){
- var url = document.getElementById("url").value;
- window.clipboardData.setData("Text",url);
- alert("复制链接成功！");
+    var url = document.getElementById("url").value;
+    window.clipboardData.setData("Text",url);
+    alert("复制链接成功！");
 }
 </script>
 		
@@ -286,6 +277,7 @@ function copyUrl(){
         }
         function load_data() {
             document.getElementById("players").innerHTML='<object style="height: 380px; width: 230px" type="text/html" data="players.html" ></object>';
+            document.getElementById("top_players").innerHTML='<object style="height: 380px; width: 230px" type="text/html" data="players.html" ></object>';
             document.getElementById("lobbies").innerHTML='<object style="height: 400px" type="text/html" data="lobbies.html" ></object>';
         } 
     //-->
