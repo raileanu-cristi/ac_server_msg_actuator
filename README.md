@@ -22,3 +22,5 @@ To observe how the application works without running the cossacks server:
 1. paste some lines from *src/res/ac_server_output_example.txt* into the file indicated by **fifo_file** parameter from time to time
 1. watch how the files from **resulting_main_file**, players_html_file and **lobbies_html_file** behave
 1. all the lines from fifo file get deleted and appended into *src/data/output_archive.txt*
+
+test
