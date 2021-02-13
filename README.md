@@ -24,3 +24,5 @@ To observe how the application works without running the cossacks server:
 1. all the lines from fifo file get deleted and appended into *src/data/output_archive.txt*
 
 test
+
+feature/f1 test
