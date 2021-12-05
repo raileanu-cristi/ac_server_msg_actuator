@@ -1,0 +1,504 @@
+2020-03-30 21:37:31.000000 +0000 info AnyEvent: Autoloaded model 'AnyEvent::Impl::Perl', using it.
+2020-03-30 21:37:31.554169 +0000 note SimpleCossacksServer: Listen localhost:34001
+2020-03-30 17:38:02.656682 -0400 info SimpleCossacksServer: 1 134.130.118.135 . #connect
+2020-03-30 17:38:02.658145 -0400 info SimpleCossacksServer: 1 134.130.118.135 . 2 0 1 "21" "" -login "\r\n"
+2020-03-30 17:38:02.835499 -0400 info SimpleCossacksServer: 1 134.130.118.135 . 2 0 2 "21" "" -open "enter.dcml"
+2020-03-30 17:38:03.774686 -0400 info SimpleCossacksServer: 1 134.130.118.135 . 2 0 3 "21" "" -go "try_enter" "NICK=sasuke_md" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "315"
+2020-03-30 17:38:03.775183 -0400 info SimpleCossacksServer: 1 134.130.118.135 sasuke_md:1 2 #enter
+2020-03-30 17:38:04.452294 -0400 info SimpleCossacksServer: 1 134.130.118.135 sasuke_md:1 2 0 4 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-30 17:38:04.739289 -0400 info SimpleCossacksServer: 1 134.130.118.135 sasuke_md:1 2 0 5 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-30 17:38:08.071342 -0400 info SimpleCossacksServer: 1 134.130.118.135 sasuke_md:1 2 0 6 "21" "key" -login "\r\n"
+2020-03-30 17:38:08.233514 -0400 info SimpleCossacksServer: 1 134.130.118.135 sasuke_md:1 2 0 7 "21" "" -open "enter.dcml"
+2020-03-30 17:38:09.591784 -0400 info SimpleCossacksServer: 1 134.130.118.135 sasuke_md:1 2 0 8 "21" "" -go "try_enter" "NICK=sasuke_md" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "315"
+2020-03-30 17:38:09.592243 -0400 info SimpleCossacksServer: 1 134.130.118.135 sasuke_md:1 2 #enter
+2020-03-30 17:38:10.294934 -0400 info SimpleCossacksServer: 1 134.130.118.135 sasuke_md:1 2 0 9 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-30 17:38:10.619451 -0400 info SimpleCossacksServer: 1 134.130.118.135 sasuke_md:1 2 0 11 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-30 17:38:17.093281 -0400 info SimpleCossacksServer: 1 134.130.118.135 sasuke_md:1 #disconnect
+2020-03-30 17:44:01.118906 -0400 info SimpleCossacksServer: 2 134.130.118.135 . #connect
+2020-03-30 17:44:01.119824 -0400 info SimpleCossacksServer: 2 134.130.118.135 . 2 0 1 "21" "" -login "\r\n"
+2020-03-30 17:44:01.283652 -0400 info SimpleCossacksServer: 2 134.130.118.135 . 2 0 2 "21" "" -open "enter.dcml"
+2020-03-30 17:44:02.279879 -0400 info SimpleCossacksServer: 2 134.130.118.135 . 2 0 3 "21" "" -go "try_enter" "NICK=sasuke_md" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "315"
+2020-03-30 17:44:02.280276 -0400 info SimpleCossacksServer: 2 134.130.118.135 sasuke_md:2 2 #enter
+2020-03-30 17:44:02.969085 -0400 info SimpleCossacksServer: 2 134.130.118.135 sasuke_md:2 2 0 4 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-30 17:44:03.211489 -0400 info SimpleCossacksServer: 2 134.130.118.135 sasuke_md:2 2 0 5 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-30 17:44:05.143661 -0400 info SimpleCossacksServer: 2 134.130.118.135 sasuke_md:2 2 0 6 "02" "key" -open "new_room_dgl.dcml" "ASTATE=1"
+2020-03-30 17:44:10.482285 -0400 info SimpleCossacksServer: 2 134.130.118.135 sasuke_md:2 2 0 8 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-30 17:44:13.934026 -0400 info SimpleCossacksServer: 2 134.130.118.135 sasuke_md:2 2 0 9 "02" "key" -open "reg_new_room.dcml" "ASTATE=1^VE_TITLE=acfb_sasuke^VE_MAX_PL=5^VE_PASSWD=^VE_LEVEL=1"
+2020-03-30 17:44:13.934623 -0400 info SimpleCossacksServer: 2 134.130.118.135 sasuke_md:2 2 #create room 2 acfb_sasuke
+2020-03-30 17:44:15.694550 -0400 info SimpleCossacksServer: 2 134.130.118.135 sasuke_md:2 2 0 11 "02" "key" -leave
+2020-03-30 17:44:15.696013 -0400 info SimpleCossacksServer: 2 134.130.118.135 sasuke_md:2 2 #leave his room 2 acfb_sasuke
+2020-03-30 17:44:15.896615 -0400 info SimpleCossacksServer: 2 134.130.118.135 sasuke_md:2 2 0 12 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-30 17:44:16.126372 -0400 info SimpleCossacksServer: 2 134.130.118.135 sasuke_md:2 2 0 13 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=9DF90F27 #1/2
+2020-03-30 17:44:22.424005 -0400 info SimpleCossacksServer: 2 134.130.118.135 sasuke_md:2 #disconnect
+2020-03-31 16:50:01.139785 -0400 info SimpleCossacksServer: 3 95.62.162.63 . #connect
+2020-03-31 16:50:01.143420 -0400 info SimpleCossacksServer: 3 95.62.162.63 . 2 0 1 "21" "" -login "\r\n"
+2020-03-31 16:50:01.297568 -0400 info SimpleCossacksServer: 3 95.62.162.63 . 2 0 2 "21" "" -open "enter.dcml"
+2020-03-31 16:50:02.609925 -0400 info SimpleCossacksServer: 3 95.62.162.63 . 2 0 3 "21" "" -go "try_enter" "NICK=Sparty" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "<@%HEIGHT>"
+2020-03-31 16:50:02.610491 -0400 info SimpleCossacksServer: 3 95.62.162.63 Sparty:3 2 #enter
+2020-03-31 16:50:04.359023 -0400 info SimpleCossacksServer: 3 95.62.162.63 Sparty:3 2 0 4 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 16:50:04.572916 -0400 info SimpleCossacksServer: 3 95.62.162.63 Sparty:3 2 0 5 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:50:06.553915 -0400 info SimpleCossacksServer: 4 37.11.100.4 . #connect
+2020-03-31 16:50:06.554697 -0400 info SimpleCossacksServer: 4 37.11.100.4 . 2 0 1 "21" "" -login "\r\n"
+2020-03-31 16:50:06.740259 -0400 info SimpleCossacksServer: 4 37.11.100.4 . 2 0 2 "21" "" -open "enter.dcml"
+2020-03-31 16:50:08.151197 -0400 info SimpleCossacksServer: 4 37.11.100.4 . 2 0 3 "21" "" -go "try_enter" "NICK=Lengorio" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "315"
+2020-03-31 16:50:08.151546 -0400 info SimpleCossacksServer: 4 37.11.100.4 Lengorio:4 2 #enter
+2020-03-31 16:50:09.140305 -0400 info SimpleCossacksServer: 4 37.11.100.4 Lengorio:4 2 0 4 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 16:50:09.419655 -0400 info SimpleCossacksServer: 4 37.11.100.4 Lengorio:4 2 0 5 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:50:11.814640 -0400 info SimpleCossacksServer: 4 37.11.100.4 Lengorio:4 2 0 6 "02" "key" -open "new_room_dgl.dcml" "ASTATE=1"
+2020-03-31 16:50:13.858694 -0400 info SimpleCossacksServer: 4 37.11.100.4 Lengorio:4 2 0 8 "02" "key" -open "reg_new_room.dcml" "ASTATE=1^VE_TITLE=Sparti^VE_MAX_PL=5^VE_PASSWD=^VE_LEVEL=1"
+2020-03-31 16:50:13.859462 -0400 info SimpleCossacksServer: 4 37.11.100.4 Lengorio:4 2 #create room 3 Sparti
+2020-03-31 16:50:14.146817 -0400 info SimpleCossacksServer: 4 37.11.100.4 Lengorio:4 2 0 9 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:50:14.592664 -0400 info SimpleCossacksServer: 3 95.62.162.63 Sparty:3 2 0 7 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:50:18.866142 -0400 info SimpleCossacksServer: 3 95.62.162.63 Sparty:3 2 0 8 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=3"
+2020-03-31 16:50:18.872181 -0400 info SimpleCossacksServer: 3 95.62.162.63 Sparty:3 2 #join room 3 Sparti
+2020-03-31 16:50:49.920203 -0400 info SimpleCossacksServer: 3 95.62.162.63 Sparty:3 2 0 10 "02" "key" -leave
+2020-03-31 16:50:49.920744 -0400 info SimpleCossacksServer: 3 95.62.162.63 Sparty:3 2 #leave room 3 Sparti
+2020-03-31 16:50:50.112056 -0400 info SimpleCossacksServer: 3 95.62.162.63 Sparty:3 2 0 11 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=162D0C44 #1/2
+2020-03-31 16:50:52.921277 -0400 info SimpleCossacksServer: 3 95.62.162.63 Sparty:3 2 0 12 "02" "key" -leave
+2020-03-31 16:50:52.921649 -0400 warn SimpleCossacksServer: 3 95.62.162.63 Sparty:3 2 have not room for leave
+2020-03-31 16:50:53.111525 -0400 info SimpleCossacksServer: 3 95.62.162.63 Sparty:3 2 0 13 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 16:50:58.719381 -0400 info SimpleCossacksServer: 4 37.11.100.4 Lengorio:4 2 0 10 "02" "key" -leave
+2020-03-31 16:50:58.720015 -0400 info SimpleCossacksServer: 4 37.11.100.4 Lengorio:4 2 #leave his room 3 Sparti
+2020-03-31 16:50:58.948379 -0400 info SimpleCossacksServer: 4 37.11.100.4 Lengorio:4 2 0 12 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 16:50:59.411081 -0400 info SimpleCossacksServer: 4 37.11.100.4 Lengorio:4 2 0 13 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:50:59.753145 -0400 info SimpleCossacksServer: 3 95.62.162.63 Sparty:3 #disconnect
+2020-03-31 16:51:02.764301 -0400 info SimpleCossacksServer: 4 37.11.100.4 Lengorio:4 #disconnect
+2020-03-31 16:57:38.727477 -0400 info SimpleCossacksServer: 5 95.62.162.63 . #connect
+2020-03-31 16:57:38.728462 -0400 info SimpleCossacksServer: 5 95.62.162.63 . 2 0 1 "21" "" -login "\r\n"
+2020-03-31 16:57:38.916711 -0400 info SimpleCossacksServer: 5 95.62.162.63 . 2 0 2 "21" "" -open "enter.dcml"
+2020-03-31 16:57:40.422930 -0400 info SimpleCossacksServer: 5 95.62.162.63 . 2 0 3 "21" "" -go "try_enter" "NICK=Sparty" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "<@%HEIGHT>"
+2020-03-31 16:57:40.423338 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 #enter
+2020-03-31 16:57:40.946319 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 4 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 16:57:41.151650 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 5 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:57:51.181956 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 7 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:57:57.052558 -0400 info SimpleCossacksServer: 6 37.11.100.4 . #connect
+2020-03-31 16:57:57.054790 -0400 info SimpleCossacksServer: 6 37.11.100.4 . 2 0 1 "21" "" -login "\r\n"
+2020-03-31 16:57:57.244618 -0400 info SimpleCossacksServer: 6 37.11.100.4 . 2 0 2 "21" "" -open "enter.dcml"
+2020-03-31 16:57:58.677896 -0400 info SimpleCossacksServer: 6 37.11.100.4 . 2 0 3 "21" "" -go "try_enter" "NICK=Lengorio" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "315"
+2020-03-31 16:57:58.678309 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 #enter
+2020-03-31 16:57:59.313627 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 4 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 16:57:59.559876 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 5 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:58:01.214442 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 9 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:58:09.588840 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 7 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:58:10.525059 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 8 "02" "key" -open "new_room_dgl.dcml" "ASTATE=1"
+2020-03-31 16:58:11.246022 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 11 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:58:14.905309 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 10 "02" "key" -open "reg_new_room.dcml" "ASTATE=1^VE_TITLE=Sparti^VE_MAX_PL=5^VE_PASSWD=^VE_LEVEL=1"
+2020-03-31 16:58:14.906585 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 #create room 4 Sparti
+2020-03-31 16:58:15.198278 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 11 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:58:16.979903 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 13 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=4"
+2020-03-31 16:58:16.981184 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 #join room 4 Sparti
+2020-03-31 16:58:17.214799 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 14 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=16540C44 #1/2
+2020-03-31 16:58:48.028146 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 15 "02" "key" -leave
+2020-03-31 16:58:48.028578 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 #leave room 4 Sparti
+2020-03-31 16:58:51.024410 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 17 "02" "key" -leave
+2020-03-31 16:58:51.024763 -0400 warn SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 have not room for leave
+2020-03-31 16:58:51.216278 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 18 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 16:58:51.417411 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 19 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=16690C45 #1/2
+2020-03-31 16:58:54.820702 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 12 "02" "key" -leave
+2020-03-31 16:58:54.821173 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 #leave his room 4 Sparti
+2020-03-31 16:58:55.049976 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 14 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 16:58:55.519767 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 15 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:58:59.019691 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 21 "02" "key" -open "new_room_dgl.dcml" "ASTATE=1"
+2020-03-31 16:58:59.220166 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 22 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:59:01.446517 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 23 "02" "key" -open "reg_new_room.dcml" "ASTATE=1^VE_TITLE=lengorio^VE_MAX_PL=0^VE_PASSWD=^VE_LEVEL=1"
+2020-03-31 16:59:01.446988 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 #create room 5 lengorio
+2020-03-31 16:59:05.541407 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 17 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 16:59:12.067985 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 19 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=5"
+2020-03-31 16:59:12.068933 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 #join room 5 lengorio
+2020-03-31 16:59:12.365984 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 20 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=34C20CD7 #1/2
+2020-03-31 16:59:43.165600 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 21 "02" "key" -leave
+2020-03-31 16:59:43.166043 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 #leave room 5 lengorio
+2020-03-31 16:59:46.164875 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 23 "02" "key" -leave
+2020-03-31 16:59:46.165225 -0400 warn SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 have not room for leave
+2020-03-31 16:59:48.180094 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 24 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=34D90CD8 #1/2
+2020-03-31 16:59:48.474505 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 25 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=5"
+2020-03-31 16:59:48.475959 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 #join room 5 lengorio
+2020-03-31 17:00:19.570755 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 27 "02" "key" -leave
+2020-03-31 17:00:19.571212 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 #leave room 5 lengorio
+2020-03-31 17:00:19.798962 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 28 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=34C20CD7 #1/2
+2020-03-31 17:00:20.440676 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 0 29 "02" "key" -leave
+2020-03-31 17:00:20.442018 -0400 warn SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 2 have not room for leave
+2020-03-31 17:00:26.164521 -0400 info SimpleCossacksServer: 6 37.11.100.4 Lengorio:6 #disconnect
+2020-03-31 17:01:01.762307 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 25 "02" "key" -alive 0100000005000000
+2020-03-31 17:01:01.952404 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 26 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=34C20CD7 #1/2
+2020-03-31 17:01:27.072179 -0400 info SimpleCossacksServer: 7 37.11.100.4 . #connect
+2020-03-31 17:01:27.073055 -0400 info SimpleCossacksServer: 7 37.11.100.4 . 2 0 1 "21" "" -login "\r\n"
+2020-03-31 17:01:27.256376 -0400 info SimpleCossacksServer: 7 37.11.100.4 . 2 0 2 "21" "" -open "enter.dcml"
+2020-03-31 17:01:28.208395 -0400 info SimpleCossacksServer: 7 37.11.100.4 . 2 0 3 "21" "" -go "try_enter" "NICK=Lengorio" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "315"
+2020-03-31 17:01:28.208789 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 #enter
+2020-03-31 17:01:28.833471 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 0 4 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 17:01:29.071624 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 0 5 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 17:01:35.952390 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 0 7 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=5"
+2020-03-31 17:01:35.953429 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 #join room 5 lengorio
+2020-03-31 17:01:36.234174 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 0 8 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=34C20CD7 #1/2
+2020-03-31 17:02:07.043562 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 0 9 "02" "key" -leave
+2020-03-31 17:02:07.043951 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 #leave room 5 lengorio
+2020-03-31 17:02:10.045201 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 0 11 "02" "key" -leave
+2020-03-31 17:02:10.045559 -0400 warn SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 have not room for leave
+2020-03-31 17:02:10.266437 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 0 12 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 17:02:10.500178 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 0 13 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=34D90CD8 #1/2
+2020-03-31 17:02:19.070828 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 0 15 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=5"
+2020-03-31 17:02:19.072000 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 #join room 5 lengorio
+2020-03-31 17:02:19.352647 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 0 16 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=34C20CD7 #1/2
+2020-03-31 17:02:50.151433 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 0 17 "02" "key" -leave
+2020-03-31 17:02:50.151866 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 #leave room 5 lengorio
+2020-03-31 17:02:51.885976 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 0 19 "02" "key" -leave
+2020-03-31 17:02:51.886328 -0400 warn SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 2 have not room for leave
+2020-03-31 17:02:55.886306 -0400 info SimpleCossacksServer: 7 37.11.100.4 Lengorio:7 #disconnect
+2020-03-31 17:03:01.776439 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 27 "02" "key" -alive 0100000005000000
+2020-03-31 17:05:01.784815 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 29 "02" "key" -alive 0100000005000000
+2020-03-31 17:05:01.974585 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 30 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=34C20CD7 #1/2
+2020-03-31 17:05:08.264309 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 0 31 "02" "key" -leave
+2020-03-31 17:05:08.264784 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 2 #leave his room 5 lengorio
+2020-03-31 17:05:12.266339 -0400 info SimpleCossacksServer: 5 95.62.162.63 Sparty:5 #disconnect
+2020-03-31 17:06:24.970710 -0400 info SimpleCossacksServer: 8 95.62.162.63 . #connect
+2020-03-31 17:06:24.971508 -0400 info SimpleCossacksServer: 8 95.62.162.63 . 2 0 1 "21" "" -login "\r\n"
+2020-03-31 17:06:25.134260 -0400 info SimpleCossacksServer: 8 95.62.162.63 . 2 0 2 "21" "" -open "enter.dcml"
+2020-03-31 17:06:26.633124 -0400 info SimpleCossacksServer: 8 95.62.162.63 . 2 0 3 "21" "" -go "try_enter" "NICK=Sparty" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "<@%HEIGHT>"
+2020-03-31 17:06:26.633778 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 #enter
+2020-03-31 17:06:27.208940 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 4 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 17:06:27.407774 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 5 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 17:06:28.932250 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 6 "02" "key" -open "new_room_dgl.dcml" "ASTATE=<%ASTATE>"
+2020-03-31 17:06:30.145107 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 8 "02" "key" -open "reg_new_room.dcml" "ASTATE=1^VE_TITLE=lengorio^VE_MAX_PL=0^VE_PASSWD=^VE_LEVEL=1"
+2020-03-31 17:06:30.146759 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 #create room 6 lengorio
+2020-03-31 17:06:30.383351 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 9 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 17:06:44.731928 -0400 info SimpleCossacksServer: 9 37.11.100.4 . #connect
+2020-03-31 17:06:44.732779 -0400 info SimpleCossacksServer: 9 37.11.100.4 . 2 0 1 "21" "" -login "\r\n"
+2020-03-31 17:06:44.918153 -0400 info SimpleCossacksServer: 9 37.11.100.4 . 2 0 2 "21" "" -open "enter.dcml"
+2020-03-31 17:06:46.530559 -0400 info SimpleCossacksServer: 9 37.11.100.4 . 2 0 3 "21" "" -go "try_enter" "NICK=Lengorio" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "315"
+2020-03-31 17:06:46.530966 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 #enter
+2020-03-31 17:06:47.145334 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 4 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 17:06:47.386297 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 5 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 17:06:53.650187 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 7 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=6"
+2020-03-31 17:06:53.651083 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 #join room 6 lengorio
+2020-03-31 17:06:53.936954 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 8 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=34E40CD0 #1/2
+2020-03-31 17:07:24.741830 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 9 "02" "key" -leave
+2020-03-31 17:07:24.742234 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 #leave room 6 lengorio
+2020-03-31 17:07:27.742034 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 11 "02" "key" -leave
+2020-03-31 17:07:27.742362 -0400 warn SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 have not room for leave
+2020-03-31 17:07:27.966130 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 12 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 17:07:28.205044 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 13 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=34FB0CD1 #1/2
+2020-03-31 17:07:31.254376 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 10 "02" "key" -leave
+2020-03-31 17:07:31.254903 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 #leave his room 6 lengorio
+2020-03-31 17:07:31.403325 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 14 "21" "key" -login "\r\n"
+2020-03-31 17:07:31.444938 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 12 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 17:07:31.588285 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 15 "21" "" -open "enter.dcml"
+2020-03-31 17:07:31.850354 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 13 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 17:07:32.793371 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 16 "21" "" -go "try_enter" "NICK=Lengorio" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "315"
+2020-03-31 17:07:32.793740 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 #enter
+2020-03-31 17:07:33.405591 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 17 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-03-31 17:07:33.776629 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 19 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=34E40CD0 #1/2
+2020-03-31 17:07:37.208677 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 20 "02" "key" -open "new_room_dgl.dcml" "ASTATE=1"
+2020-03-31 17:07:39.163882 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 22 "02" "key" -open "reg_new_room.dcml" "ASTATE=1^VE_TITLE=Sparti^VE_MAX_PL=5^VE_PASSWD=^VE_LEVEL=1"
+2020-03-31 17:07:39.164433 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 #create room 7 Sparti
+2020-03-31 17:07:39.450081 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 23 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 17:07:41.867423 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 15 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 17:07:44.435859 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 16 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=7"
+2020-03-31 17:07:44.436882 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 #join room 7 Sparti
+2020-03-31 17:08:15.484987 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 18 "02" "key" -leave
+2020-03-31 17:08:15.485389 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 #leave room 7 Sparti
+2020-03-31 17:08:15.685103 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 19 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=16C20C3D #1/2
+2020-03-31 17:08:18.489928 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 20 "02" "key" -leave
+2020-03-31 17:08:18.490268 -0400 warn SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 have not room for leave
+2020-03-31 17:08:20.536485 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 24 "02" "key" -leave
+2020-03-31 17:08:20.537688 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 #leave his room 7 Sparti
+2020-03-31 17:08:25.536827 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 2 0 26 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-03-31 17:08:25.744857 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 21 "21" "key" -login "\r\n"
+2020-03-31 17:08:25.906420 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 22 "21" "" -open "enter.dcml"
+2020-03-31 17:08:29.166749 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 23 "21" "" -login "\r\n"
+2020-03-31 17:08:29.318592 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 2 0 24 "21" "" -open "enter.dcml"
+2020-03-31 17:09:11.677026 -0400 info SimpleCossacksServer: 9 37.11.100.4 Lengorio:9 #disconnect
+2020-03-31 17:09:15.739866 -0400 info SimpleCossacksServer: 8 95.62.162.63 Sparty:8 #disconnect
+2020-04-01 02:48:54.212109 -0400 info SimpleCossacksServer: 10 23.252.100.130 . #connect
+2020-04-01 02:48:54.213068 -0400 info SimpleCossacksServer: 10 23.252.100.130 . #disconnect
+2020-04-01 02:48:58.541238 -0400 info SimpleCossacksServer: 11 144.202.112.137 . #connect
+2020-04-01 02:48:58.541574 -0400 info SimpleCossacksServer: 11 144.202.112.137 . #disconnect
+2020-04-01 02:48:58.546356 -0400 info SimpleCossacksServer: 12 107.161.88.45 . #connect
+2020-04-01 02:48:58.546610 -0400 info SimpleCossacksServer: 12 107.161.88.45 . #disconnect
+2020-04-01 02:48:58.583873 -0400 info SimpleCossacksServer: 13 173.255.209.253 . #connect
+2020-04-01 02:48:58.584234 -0400 info SimpleCossacksServer: 13 173.255.209.253 . #disconnect
+2020-04-01 02:48:58.594254 -0400 info SimpleCossacksServer: 14 165.227.48.82 . #connect
+2020-04-01 02:48:58.594547 -0400 info SimpleCossacksServer: 14 165.227.48.82 . #disconnect
+2020-04-01 02:48:58.619070 -0400 info SimpleCossacksServer: 15 35.197.10.99 . #connect
+2020-04-01 02:48:58.619405 -0400 info SimpleCossacksServer: 15 35.197.10.99 . #disconnect
+2020-04-01 02:48:58.650511 -0400 info SimpleCossacksServer: 16 174.137.48.255 . #connect
+2020-04-01 02:48:58.650857 -0400 info SimpleCossacksServer: 16 174.137.48.255 . #disconnect
+2020-04-01 02:48:58.651253 -0400 info SimpleCossacksServer: 17 169.54.194.61 . #connect
+2020-04-01 02:48:58.651412 -0400 info SimpleCossacksServer: 17 169.54.194.61 . #disconnect
+2020-04-01 02:48:58.656172 -0400 info SimpleCossacksServer: 18 204.45.80.44 . #connect
+2020-04-01 02:48:58.656372 -0400 info SimpleCossacksServer: 18 204.45.80.44 . #disconnect
+2020-04-01 02:48:58.700629 -0400 info SimpleCossacksServer: 19 192.184.82.36 . #connect
+2020-04-01 02:48:58.701224 -0400 info SimpleCossacksServer: 19 192.184.82.36 . #disconnect
+2020-04-01 02:48:58.733530 -0400 info SimpleCossacksServer: 20 50.7.8.99 . #connect
+2020-04-01 02:48:58.733963 -0400 info SimpleCossacksServer: 20 50.7.8.99 . #disconnect
+2020-04-01 02:48:58.741302 -0400 info SimpleCossacksServer: 21 147.135.22.28 . #connect
+2020-04-01 02:48:58.741631 -0400 info SimpleCossacksServer: 21 147.135.22.28 . #disconnect
+2020-04-01 02:48:58.750243 -0400 info SimpleCossacksServer: 22 168.235.67.174 . #connect
+2020-04-01 02:48:58.750487 -0400 info SimpleCossacksServer: 22 168.235.67.174 . #disconnect
+2020-04-01 02:48:59.143496 -0400 info SimpleCossacksServer: 23 123.207.145.245 . #connect
+2020-04-01 02:48:59.144006 -0400 info SimpleCossacksServer: 23 123.207.145.245 . #disconnect
+2020-04-01 02:48:59.148164 -0400 info SimpleCossacksServer: 24 140.143.93.196 . #connect
+2020-04-01 02:48:59.148672 -0400 info SimpleCossacksServer: 24 140.143.93.196 . #disconnect
+2020-04-01 02:48:59.166218 -0400 info SimpleCossacksServer: 25 112.30.130.63 . #connect
+2020-04-01 02:48:59.166528 -0400 info SimpleCossacksServer: 25 112.30.130.63 . #disconnect
+2020-04-01 02:48:59.196559 -0400 info SimpleCossacksServer: 26 123.206.200.34 . #connect
+2020-04-01 02:48:59.197670 -0400 info SimpleCossacksServer: 26 123.206.200.34 . #disconnect
+2020-04-01 02:48:59.236952 -0400 info SimpleCossacksServer: 27 47.96.79.76 . #connect
+2020-04-01 02:48:59.237632 -0400 info SimpleCossacksServer: 27 47.96.79.76 . #disconnect
+2020-04-01 02:48:59.252599 -0400 info SimpleCossacksServer: 28 221.181.173.20 . #connect
+2020-04-01 02:48:59.252953 -0400 info SimpleCossacksServer: 28 221.181.173.20 . #disconnect
+2020-04-01 02:48:59.255036 -0400 info SimpleCossacksServer: 29 47.101.65.208 . #connect
+2020-04-01 02:48:59.255227 -0400 info SimpleCossacksServer: 29 47.101.65.208 . #disconnect
+2020-04-01 02:48:59.257904 -0400 info SimpleCossacksServer: 30 39.106.209.134 . #connect
+2020-04-01 02:48:59.258080 -0400 info SimpleCossacksServer: 30 39.106.209.134 . #disconnect
+2020-04-01 02:48:59.277283 -0400 info SimpleCossacksServer: 31 222.186.161.97 . #connect
+2020-04-01 02:48:59.277616 -0400 info SimpleCossacksServer: 31 222.186.161.97 . #disconnect
+2020-04-01 02:48:59.364556 -0400 info SimpleCossacksServer: 32 47.105.221.174 . #connect
+2020-04-01 02:48:59.364985 -0400 info SimpleCossacksServer: 32 47.105.221.174 . #disconnect
+2020-04-01 02:48:59.420507 -0400 info SimpleCossacksServer: 33 112.85.231.166 . #connect
+2020-04-01 02:48:59.421024 -0400 info SimpleCossacksServer: 33 112.85.231.166 . #disconnect
+2020-04-01 02:49:00.120162 -0400 info SimpleCossacksServer: 34 120.79.217.127 . #connect
+2020-04-01 02:49:00.120498 -0400 info SimpleCossacksServer: 34 120.79.217.127 . #disconnect
+2020-04-01 03:17:14.992496 -0400 info SimpleCossacksServer: 35 1.81.191.23 . #connect
+2020-04-01 03:17:14.997963 -0400 info SimpleCossacksServer: 35 1.81.191.23 . 2 0 1 "21" "" -login "\r\n"
+2020-04-01 03:17:25.954741 -0400 info SimpleCossacksServer: 35 1.81.191.23 . 2 0 2 "21" "" -open "enter.dcml"
+2020-04-01 03:18:15.990323 -0400 info SimpleCossacksServer: 35 1.81.191.23 . #disconnect
+2020-04-01 12:59:20.250009 -0400 info SimpleCossacksServer: 36 85.7.8.191 . #connect
+2020-04-01 12:59:20.252687 -0400 info SimpleCossacksServer: 36 85.7.8.191 . 2 0 1 "21" "" -login "\r\n"
+2020-04-01 12:59:20.453861 -0400 info SimpleCossacksServer: 36 85.7.8.191 . 2 0 2 "21" "" -open "enter.dcml"
+2020-04-01 12:59:21.733081 -0400 info SimpleCossacksServer: 36 85.7.8.191 . 2 0 3 "21" "" -go "try_enter" "NICK=Shogun" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "<@%HEIGHT>"
+2020-04-01 12:59:21.733961 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #enter
+2020-04-01 12:59:24.624651 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 4 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-04-01 12:59:24.858829 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 5 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 12:59:34.884140 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 7 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 12:59:45.134215 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 9 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 12:59:55.167469 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 11 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:00:04.755053 -0400 info SimpleCossacksServer: 37 134.130.118.135 . #connect
+2020-04-01 13:00:04.755886 -0400 info SimpleCossacksServer: 37 134.130.118.135 . 2 0 1 "21" "" -login "\r\n"
+2020-04-01 13:00:04.914310 -0400 info SimpleCossacksServer: 37 134.130.118.135 . 2 0 2 "21" "" -open "enter.dcml"
+2020-04-01 13:00:05.196531 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 13 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:00:05.871191 -0400 info SimpleCossacksServer: 37 134.130.118.135 . 2 0 3 "21" "" -go "try_enter" "NICK=sasuke_md" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "315"
+2020-04-01 13:00:05.871563 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #enter
+2020-04-01 13:00:06.595494 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 4 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-04-01 13:00:06.820703 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 5 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:00:15.229227 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 15 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:00:16.844103 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 7 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:00:19.468223 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 8 "02" "key" -open "new_room_dgl.dcml" "ASTATE=1"
+2020-04-01 13:00:24.719098 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 10 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:00:25.257946 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 17 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:00:31.882673 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 12 "02" "key" -open "reg_new_room.dcml" "ASTATE=1^VE_TITLE=acfb_sasuke^VE_MAX_PL=2^VE_PASSWD=^VE_LEVEL=1"
+2020-04-01 13:00:31.883438 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #create room 8 acfb_sasuke
+2020-04-01 13:00:32.155479 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 13 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:00:35.288759 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 19 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:00:39.858232 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 20 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=8"
+2020-04-01 13:00:39.859234 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #join room 8 acfb_sasuke
+2020-04-01 13:01:10.913703 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 22 "02" "key" -leave
+2020-04-01 13:01:10.914227 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #leave room 8 acfb_sasuke
+2020-04-01 13:01:11.140943 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 23 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=9ECD0F1D #1/2
+2020-04-01 13:01:13.913836 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 24 "02" "key" -leave
+2020-04-01 13:01:13.914304 -0400 warn SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 have not room for leave
+2020-04-01 13:01:14.214215 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 25 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-04-01 13:01:18.604870 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 14 "02" "key" -leave
+2020-04-01 13:01:18.605254 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #leave his room 8 acfb_sasuke
+2020-04-01 13:01:18.804500 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 16 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-04-01 13:01:19.215351 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 17 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:01:19.460380 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 27 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=9ECD0F1D #1/2
+2020-04-01 13:01:22.894978 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 28 "02" "key" -open "new_room_dgl.dcml" "ASTATE=1"
+2020-04-01 13:01:24.127243 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 30 "02" "key" -open "reg_new_room.dcml" "ASTATE=1^VE_TITLE=Game^VE_MAX_PL=5^VE_PASSWD=^VE_LEVEL=0"
+2020-04-01 13:01:24.127675 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #create room 9 Game
+2020-04-01 13:01:24.462788 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 31 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:01:28.650695 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 19 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=9"
+2020-04-01 13:01:28.652021 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #join room 9 Game
+2020-04-01 13:01:28.924242 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 20 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=108D0BC5 #1/2
+2020-04-01 13:02:58.880243 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 21 "02" "key" -start "\00" "RN1 C0D9 200201 000000E1 6001210.m3d\00" "2\00" "10\00" "61\00" "0\00" "1\00" "11\00" "48\00" "0\00" "0\00"
+2020-04-01 13:02:58.880673 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #start game 9 Game
+2020-04-01 13:02:59.485246 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 32 "02" "key" -start "\00" "RN1 C0D9 200201 000000E1 6001210.m3d\00" "2\00" "10\00" "61\00" "0\00" "1\00" "11\00" "48\00" "0\00" "0\00"
+2020-04-01 13:02:59.485600 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #start his game 9 Game
+2020-04-01 13:05:29.568249 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #not alive in room 9 Game
+2020-04-01 13:05:29.568754 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #not alive in his room 9 Game
+2020-04-01 13:06:13.503829 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 22 "02" "key" -leave
+2020-04-01 13:06:13.504129 -0400 warn SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 have not room for leave
+2020-04-01 13:06:14.409884 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 33 "02" "key" -leave
+2020-04-01 13:06:14.410346 -0400 warn SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 have not room for leave
+2020-04-01 13:06:23.773479 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 34 "21" "key" -login "\r\n"
+2020-04-01 13:06:24.140965 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 35 "21" "" -open "enter.dcml"
+2020-04-01 13:06:25.254439 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 36 "21" "" -go "try_enter" "NICK=Shogun" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "<@%HEIGHT>"
+2020-04-01 13:06:25.254818 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #enter
+2020-04-01 13:06:26.173510 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 37 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-04-01 13:06:26.495959 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 39 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=108D0BC5 #1/2
+2020-04-01 13:06:26.514103 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 23 "21" "key" -login "\r\n"
+2020-04-01 13:06:26.673029 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 24 "21" "" -open "enter.dcml"
+2020-04-01 13:06:27.797446 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 25 "21" "" -go "try_enter" "NICK=sasuke_md" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "315"
+2020-04-01 13:06:27.798609 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #enter
+2020-04-01 13:06:28.324928 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 26 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-04-01 13:06:28.642746 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 28 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=10A40BC6 #1/2
+2020-04-01 13:06:36.402245 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 41 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:06:38.571974 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 30 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:06:46.437433 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 43 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:06:48.603410 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 32 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:06:56.467906 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 45 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:06:58.634428 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 34 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:07:06.501630 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 47 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:07:08.665108 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 36 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:07:16.530788 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 49 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:07:18.697505 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 38 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:07:26.563766 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 51 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:07:28.727302 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 40 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:07:36.592936 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 53 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:07:38.758528 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 42 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:07:46.619949 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 55 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:07:48.789640 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 44 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:07:56.654869 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 57 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:07:58.820837 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 46 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:08:06.685226 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 59 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:08:08.851854 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 48 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:08:16.716286 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 61 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:08:18.883228 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 50 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:08:26.746867 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 63 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:08:28.914261 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 52 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:08:36.778697 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 65 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:08:38.945580 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 54 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:08:46.809088 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 67 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:08:48.978847 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 56 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:08:52.601712 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 57 "02" "key" -open "new_room_dgl.dcml" "ASTATE=1"
+2020-04-01 13:08:53.928025 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 59 "02" "key" -open "reg_new_room.dcml" "ASTATE=1^VE_TITLE=acfb_sasuke^VE_MAX_PL=2^VE_PASSWD=^VE_LEVEL=1"
+2020-04-01 13:08:53.928760 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #create room 10 acfb_sasuke
+2020-04-01 13:08:54.197490 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 60 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:08:54.355433 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 61 "02" "key" -alive 010000000B000000
+2020-04-01 13:08:55.414513 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 62 "02" "key" -leave
+2020-04-01 13:08:55.415019 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #leave his room 10 acfb_sasuke
+2020-04-01 13:08:56.548254 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 63 "02" "key" -open "new_room_dgl.dcml" "ASTATE=1"
+2020-04-01 13:08:56.841124 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 69 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:09:01.618570 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 65 "02" "key" -open "reg_new_room.dcml" "ASTATE=1^VE_TITLE=acfb_sasuke^VE_MAX_PL=5^VE_PASSWD=^VE_LEVEL=1"
+2020-04-01 13:09:01.619318 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #create room 11 acfb_sasuke
+2020-04-01 13:09:01.898159 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 66 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:09:06.872082 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 71 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=A71B0F47 #1/2
+2020-04-01 13:09:07.380424 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 72 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=11"
+2020-04-01 13:09:07.381591 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #join room 11 acfb_sasuke
+2020-04-01 13:09:38.509373 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 74 "02" "key" -leave
+2020-04-01 13:09:38.509840 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #leave room 11 acfb_sasuke
+2020-04-01 13:09:38.724914 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 75 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=A71B0F47 #1/2
+2020-04-01 13:09:41.412874 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 67 "02" "key" -leave
+2020-04-01 13:09:41.413369 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #leave his room 11 acfb_sasuke
+2020-04-01 13:09:41.511663 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 76 "02" "key" -leave
+2020-04-01 13:09:41.511976 -0400 warn SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 have not room for leave
+2020-04-01 13:09:46.413065 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 69 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:09:48.539370 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 78 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:09:56.444370 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 71 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:09:58.570804 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 80 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:10:06.477879 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 73 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:10:08.605077 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 82 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:10:16.505295 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 75 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:10:18.639106 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 84 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:10:26.537190 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 77 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:10:28.666394 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 86 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:10:30.688402 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 87 "02" "key" -open "new_room_dgl.dcml" "ASTATE=1"
+2020-04-01 13:10:31.582370 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 89 "02" "key" -open "reg_new_room.dcml" "ASTATE=1^VE_TITLE=Game^VE_MAX_PL=5^VE_PASSWD=^VE_LEVEL=0"
+2020-04-01 13:10:31.583806 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #create room 12 Game
+2020-04-01 13:10:31.866863 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 90 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:10:32.076205 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 91 "02" "key" -alive 010000000A000000
+2020-04-01 13:10:36.568659 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 79 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:10:45.272964 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 81 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=12"
+2020-04-01 13:10:45.273849 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #join room 12 Game
+2020-04-01 13:10:45.555650 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 82 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=17760BEC #1/2
+2020-04-01 13:10:59.527353 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 83 "02" "key" -leave
+2020-04-01 13:10:59.527755 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #leave room 12 Game
+2020-04-01 13:11:02.321980 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 92 "02" "key" -leave
+2020-04-01 13:11:02.322520 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #leave his room 12 Game
+2020-04-01 13:11:02.728312 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 85 "02" "key" -open "new_room_dgl.dcml" "ASTATE=1"
+2020-04-01 13:11:02.947134 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 86 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=17760BEC #1/2
+2020-04-01 13:11:04.411608 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 87 "02" "key" -open "reg_new_room.dcml" "ASTATE=1^VE_TITLE=acfb_sasuke^VE_MAX_PL=5^VE_PASSWD=^VE_LEVEL=1"
+2020-04-01 13:11:04.412163 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #create room 13 acfb_sasuke
+2020-04-01 13:11:04.840347 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 89 "02" "key" -alive 010000000B000000
+2020-04-01 13:11:07.337524 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 94 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:11:12.596527 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 96 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=13"
+2020-04-01 13:11:12.597829 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #join room 13 acfb_sasuke
+2020-04-01 13:11:12.866209 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 97 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=A7790F47 #1/2
+2020-04-01 13:12:34.959300 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 98 "02" "key" -start "\00" "RN0 763C 10500 00000014 3000000.m3d\00" "2\00" "11\00" "51\00" "0\00" "0\00" "10\00" "48\00" "0\00" "1\00"
+2020-04-01 13:12:34.959801 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #start game 13 acfb_sasuke
+2020-04-01 13:12:35.551542 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 90 "02" "key" -start "\00" "RN0 763C 10500 00000014 3000000.m3d\00" "2\00" "11\00" "51\00" "0\00" "0\00" "10\00" "48\00" "0\00" "1\00"
+2020-04-01 13:12:35.552089 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #start his game 13 acfb_sasuke
+2020-04-01 13:14:10.906980 -0400 info SimpleCossacksServer: 38 91.225.116.48 . #connect
+2020-04-01 13:14:10.907902 -0400 info SimpleCossacksServer: 38 91.225.116.48 . 2 0 1 "21" "" -login "\r\n"
+2020-04-01 13:14:11.112044 -0400 info SimpleCossacksServer: 38 91.225.116.48 . 2 0 2 "21" "" -open "enter.dcml"
+2020-04-01 13:14:13.183293 -0400 info SimpleCossacksServer: 38 91.225.116.48 . 2 0 3 "21" "" -go "try_enter" "NICK=Black____Joker28" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "315"
+2020-04-01 13:14:13.183643 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 #enter
+2020-04-01 13:14:14.448106 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 4 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-04-01 13:14:14.721239 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 5 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:14:24.748473 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 7 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=EA2F1091 #1/2
+2020-04-01 13:14:28.225708 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 8 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID=13"
+2020-04-01 13:14:32.073997 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 10 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=EA2F1091 #1/2
+2020-04-01 13:14:42.090826 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 12 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=EA2F1091 #1/2
+2020-04-01 13:14:47.519911 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 14 "02" "key" -open "new_room_dgl.dcml" "ASTATE=1"
+2020-04-01 13:14:47.797410 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 15 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=EA2F1091 #1/2
+2020-04-01 13:14:54.123003 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 17 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=EA2F1091 #1/2
+2020-04-01 13:15:04.152945 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 19 "02" "key" -GETTBL "ROOMS_V2\00" "1\00" rows=EA2F1091 #1/2
+2020-04-01 13:15:05.553397 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 #not alive in his room 13 acfb_sasuke
+2020-04-01 13:15:05.553816 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 #not alive in room 13 acfb_sasuke
+2020-04-01 13:15:14.184640 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 21 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:15:24.215713 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 23 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:15:34.246454 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 25 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:15:36.036071 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 26 "02" "key" -open "resize" "height=420"
+2020-04-01 13:15:36.444210 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 28 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:15:36.841017 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 29 "02" "key" -open "resize" "height=315"
+2020-04-01 13:15:37.398762 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 31 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:15:38.071407 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 32 "02" "key" -open "games.dcml\00"
+2020-04-01 13:15:38.864224 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 34 "02" "key" -open "games.dcml\00"
+2020-04-01 13:15:39.126647 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 35 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:15:39.370269 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 36 "02" "key" -open "games.dcml\00"
+2020-04-01 13:15:39.575017 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 37 "02" "key" -open "games.dcml\00"
+2020-04-01 13:15:39.782286 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 39 "02" "key" -open "games.dcml\00"
+2020-04-01 13:15:39.984407 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 40 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:15:39.985589 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 41 "02" "key" -open "games.dcml\00"
+2020-04-01 13:15:40.186122 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 42 "02" "key" -open "games.dcml\00"
+2020-04-01 13:15:40.589543 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 44 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:15:40.591157 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 45 "02" "key" -open "users_list.dcml\00"
+2020-04-01 13:15:41.052356 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 47 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:15:43.884658 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 49 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-04-01 13:15:44.147703 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 50 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:15:47.493161 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 51 "21" "key" -login "\r\n"
+2020-04-01 13:15:47.696950 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 52 "21" "" -open "enter.dcml"
+2020-04-01 13:15:50.046161 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 53 "21" "" -go "try_enter" "NICK=Black____Joker28" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "315"
+2020-04-01 13:15:50.047209 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 #enter
+2020-04-01 13:15:50.835232 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 54 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-04-01 13:15:51.245275 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 2 0 56 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-01 13:15:56.474869 -0400 info SimpleCossacksServer: 38 91.225.116.48 Black____Joker28:12 #disconnect
+2020-04-01 14:23:26.299514 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 0 99 "02" "key" -leave
+2020-04-01 14:23:26.300076 -0400 warn SimpleCossacksServer: 36 85.7.8.191 Shogun:10 2 have not room for leave
+2020-04-01 14:23:28.195472 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 0 91 "02" "key" -leave
+2020-04-01 14:23:28.195772 -0400 warn SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 2 have not room for leave
+2020-04-01 14:23:30.620418 -0400 info SimpleCossacksServer: 36 85.7.8.191 Shogun:10 #disconnect
+2020-04-01 14:24:32.335319 -0400 info SimpleCossacksServer: 37 134.130.118.135 sasuke_md:11 #disconnect
+2020-04-01 23:21:31.455087 -0400 info SimpleCossacksServer: 39 186.21.78.236 . #connect
+2020-04-01 23:21:31.457833 -0400 info SimpleCossacksServer: 39 186.21.78.236 . 2 0 1 "21" "" -login "\r\n"
+2020-04-01 23:21:31.661561 -0400 info SimpleCossacksServer: 39 186.21.78.236 . 2 0 2 "21" "" -open "enter.dcml"
+2020-04-01 23:22:31.551960 -0400 info SimpleCossacksServer: 39 186.21.78.236 . #disconnect
+2020-04-02 07:28:36.147483 -0400 info SimpleCossacksServer: 40 95.171.54.129 . #connect
+2020-04-02 07:28:36.153224 -0400 info SimpleCossacksServer: 40 95.171.54.129 . 2 0 1 "21" "" -login "\r\n"
+2020-04-02 07:28:36.333697 -0400 info SimpleCossacksServer: 40 95.171.54.129 . 2 0 2 "21" "" -open "enter.dcml"
+2020-04-02 07:28:49.088599 -0400 info SimpleCossacksServer: 40 95.171.54.129 . 2 0 3 "21" "" -go "try_enter" "NICK=Erotatnok" "TYPE=" "PASSWORD=..." "LOGGED_IN=" "HEIGHT:=" "<@%HEIGHT>"
+2020-04-02 07:28:49.089246 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 #enter
+2020-04-02 07:28:53.438671 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 4 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-04-02 07:28:53.725779 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 5 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-02 07:29:03.748162 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 7 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-02 07:29:11.257514 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 9 "02" "key" -open "room_info_dgl.dcml" "VE_RID="
+2020-04-02 07:29:11.522995 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 10 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-02 07:29:12.250394 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 11 "02" "key" -open "room_info_dgl.dcml" "VE_RID="
+2020-04-02 07:29:12.681910 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 13 "02" "key" -open "room_info_dgl.dcml" "VE_RID="
+2020-04-02 07:29:12.876141 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 14 "02" "key" -open "new_room_dgl.dcml" "ASTATE=1"
+2020-04-02 07:29:13.055129 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 15 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-02 07:29:18.216803 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 17 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-02 07:29:25.957571 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 19 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-02 07:29:35.986382 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 21 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-02 07:29:43.717853 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 23 "02" "key" -open "join_pl_cmd.dcml\00" "VE_PLAYER=1\00"
+2020-04-02 07:29:46.008193 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 24 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-02 07:29:49.042643 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 25 "02" "key" -open "join_game.dcml" "ASTATE=1^VE_RID="
+2020-04-02 07:29:54.314133 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 27 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-02 07:30:04.336586 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 29 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-02 07:30:14.370978 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 31 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-02 07:30:20.127113 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 33 "02" "key" -open "users_list.dcml\00"
+2020-04-02 07:30:20.424712 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 34 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-02 07:30:20.602906 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 35 "02" "key" -open "startup.dcml\00" "m_page=0\00\r\n"
+2020-04-02 07:30:22.658016 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 37 "02" "key" -open "users_list.dcml\00"
+2020-04-02 07:30:22.905170 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 2 0 38 "02" "key" -GETTBL "ROOMS_V2\00" "0\00" rows= #1/2
+2020-04-02 07:30:38.091139 -0400 info SimpleCossacksServer: 40 95.171.54.129 Erotatnok:13 #disconnect

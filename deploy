@@ -1,2 +1,2 @@
-python ac_server_msg_actuator.py ./../ac/server_output.txt /usr/local/nginx/html/zfmz/server.html /usr/local/nginx/html/zfmz/players_list.html /usr/local/nginx/html/zfmz/lobbies_list.html &
+python ./src/ac_server_msg_actuator.py ./../ac/server_output.txt /usr/local/nginx/html/zfmz/server.html /usr/local/nginx/html/zfmz/players_list.html /usr/local/nginx/html/zfmz/lobbies_list.html &
 disown

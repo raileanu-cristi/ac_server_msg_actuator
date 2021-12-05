@@ -74,9 +74,9 @@ def update_players(players, new_players):
 # ----------------------------------- app logic --------------------------------------
 def main():
     # constants
-    output_archive_file = "output_archive.txt"
-    players_file = "players_data"
-    server_html_file = "server.html"
+    output_archive_file = "data/output_archive.txt"
+    players_file = "data/players_data"
+    server_html_file = "res/server.html"
     
     #arg parsing
     parser = argparse.ArgumentParser(description='American conquest server message actuator')
