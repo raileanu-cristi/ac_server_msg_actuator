@@ -53,7 +53,7 @@ input, button{border:0;vertical-align:middle;margin:2px;line-height:18px;font-si
         
     </head>
 
-<body onload = "JavaScript:AutoRefresh(10000);">
+<body onload = "JavaScript:AutoRefresh(30000);">
     
     
     
@@ -268,7 +268,7 @@ function copyUrl(){
 </script>
 
 <script type = "text/JavaScript">
-    <!--
+    
         function AutoRefresh( t ) {
             // setTimeout("location.reload(true);", t);
             load_data();
@@ -276,11 +276,11 @@ function copyUrl(){
             setInterval("load_data();", t);
         }
         function load_data() {
-            document.getElementById("players").innerHTML='<object style="height: 380px; width: 230px" type="text/html" data="players.html" ></object>';
-            document.getElementById("top_players").innerHTML='<object style="height: 380px; width: 230px" type="text/html" data="players.html" ></object>';
-            document.getElementById("lobbies").innerHTML='<object style="height: 400px" type="text/html" data="lobbies.html" ></object>';
+            document.getElementById("players").innerHTML='<object style="height: 380px; width: 230px" type="text/html" data="players_list.html" ></object>';
+			document.getElementById("top_players").innerHTML='<object style="height: 380px; width: 230px" type="text/html" data="players.html" ></object>';
+            document.getElementById("lobbies").innerHTML='<object style="height: 400px" type="text/html" data="lobbies_list.html" ></object>';
         } 
-    //-->
+    
 </script>
 
         <script src="scripts/vendor.js"></script>
