@@ -6,6 +6,7 @@ from io_simple import display_duration
 class Player:
     dt_format = '%d-%m-%y %H:%M:%S'
     max_inactivity_ignore = 60 # max seconds between 2 activities
+    max_nick_len = 17 # how many characters are displayed in html
 
 
     def __init__(self, nick, datetime_str='', duration_play_str=''):
@@ -43,13 +44,19 @@ class Player:
     def get_xp(self):
         return int(self.duration_of_play / 60)
 
+	
+    def trim_name(self, name, maxlen):
+        if len(name) <= maxlen:
+            return name
+        else:
+            return name[0:maxlen-3]+"...";
 
 
     def to_html_string(self):
         tags = Html()
         outer_style = "margin-bottom: 4px;border: 1px"
         name_style = "font-size: 20px;"
-        return tags.div(tags.div(tags.b(self.nick) , name_style) + tags.div("" + str(self.get_xp()) + "XP" ) + 
+        return tags.div(tags.div(tags.b(self.trim_name(self.nick, self.max_nick_len)) , name_style) + tags.div("" + str(self.get_xp()) + "XP" ) + 
                tags.div(display_duration(self.inactivity_duration())+" ago") , outer_style)
 
 
